@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Banner Generator</title>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script>
-    // custom JS/jQuery
-    $(function(){      
-        //code goes here not inside the function above
-        
-    });
+        // custom JS/jQuery
+        $(function() {
+            //code goes here not inside the function above
+        var name = $('#name') .val;
+        $('h2').html(name)
+        });
     </script>
+   <center> 
+   <h1> Create Your Own Banner!</h1> 
+   </center>
 </head>
-<body>
 
+<body>
+<input id="name">
+<button>Add your name</button>
+<input id="color">
+<button>Select background color</button>
+<br> <br> <br> <br> <br> <br>  
+<center>
+<h2> </h2>
+</center>
 </body>
+
 </html>
