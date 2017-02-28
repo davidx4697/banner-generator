@@ -8,25 +8,24 @@
     <script>
         // custom JS/jQuery
         $(function() {
-            //code goes here not inside the function above
-        var name = $('#name') .val;
-        $('h2').html(name)
+            $('button').click(function() {
+                var name1 = $('#name').val();
+                $('h2').html(name1);
+            });
         });
     </script>
-   <center> 
-   <h1> Create Your Own Banner!</h1> 
-   </center>
+    <center>
+    </center>
 </head>
 
 <body>
-<input id="name">
-<button>Add your name</button>
-<input id="color">
-<button>Select background color</button>
-<br> <br> <br> <br> <br> <br>  
-<center>
-<h2> </h2>
-</center>
+    <input id="name">
+    <button>Add your name</button>
+    <br>
+    <br> <br> <br> <br> <br> <br>
+    <center>
+        <h2></h2>
+    </center>
 </body>
 
 </html>
