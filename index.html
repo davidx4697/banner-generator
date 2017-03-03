@@ -9,23 +9,52 @@
         // custom JS/jQuery
         $(function() {
             $('button').click(function() {
-                var name1 = $('#name').val();
-                $('h2').html(name1);
+                var name = $('#name').val();
+                $('p').html(name);
+
+
+                var color = $('#color').val();
+                $('#banner').css('background-color', color);
+
+                var age = $('#age').val();
+                $('.age1').html(age);
             });
         });
     </script>
+    <style>
+     
+        
+        #banner {
+            text-align: center;
+            width: 100%;
+            height: 50%;
+            position: absolute;
+        }
+        p , age1{
+            font-size:30px;
+        }
+    </style>
     <center>
     </center>
 </head>
 
 <body>
-    <input id="name">
-    <button>Add your name</button>
+
+    <br> Name:
+    <input type='text' id="name"><br> Color: <input type='text' id="color"><br> Age: <input type="text" id='age'>
+    <br><br><button>Create</button>
     <br>
     <br> <br> <br> <br> <br> <br>
-    <center>
-        <h2></h2>
-    </center>
+
+        <br>
+
+    
+    <div id='banner'>
+        <p></p>
+        <div class="age1">
+            <h1></h1>
+        </div>
+    </div>
 </body>
 
 </html>
