@@ -12,26 +12,30 @@
                 var name = $('#name').val();
                 $('p').html(name);
 
-
+                // add  if 
                 var color = $('#color').val();
                 $('#banner').css('background-color', color);
 
                 var age = $('#age').val();
                 $('.age1').html(age);
             });
+            var randomColor = ['red','blue','green','pink','green','yellow','#F42D4C'];
+            var randomColor1=randomColor[Math.floor(Math.random()*randomColor.length)];
         });
     </script>
     <style>
-     
-        
         #banner {
             text-align: center;
             width: 100%;
             height: 50%;
             position: absolute;
+          bottom:0px;
         }
-        p , age1{
-            font-size:30px;
+        
+        p,
+        age1 {
+            font-size: 30px;
+            margin-top:150px;
         }
     </style>
     <center>
@@ -46,9 +50,9 @@
     <br>
     <br> <br> <br> <br> <br> <br>
 
-        <br>
+    <br>
 
-    
+
     <div id='banner'>
         <p></p>
         <div class="age1">
