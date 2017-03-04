@@ -6,6 +6,7 @@
     <title>Banner Generator</title>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script>
+        var randomColor = ['red', 'blue', 'green', 'pink', 'green', 'yellow', '#F42D4C'];
         // custom JS/jQuery
         $(function() {
             $('button').click(function() {
@@ -18,9 +19,9 @@
 
                 var age = $('#age').val();
                 $('.age1').html(age);
+                //  });
+
             });
-            var randomColor = ['red','blue','green','pink','green','yellow','#F42D4C'];
-            var randomColor1=randomColor[Math.floor(Math.random()*randomColor.length)];
         });
     </script>
     <style>
@@ -29,14 +30,14 @@
             width: 100%;
             height: 50%;
             position: absolute;
-          bottom:0px;
+            bottom: 0px;
         }
         
-        p,
-        age1 {
-            font-size: 30px;
-            margin-top:150px;
+        p ,  .age1 {
+            font-size: 25px;
+            margin-top: 50px;
         }
+        
     </style>
     <center>
     </center>
@@ -45,8 +46,8 @@
 <body>
 
     <br> Name:
-    <input type='text' id="name"><br> Color: <input type='text' id="color"><br> Age: <input type="text" id='age'>
-    <br><br><button>Create</button>
+    <input type='text' id="name"><br> Color: <input type='text' id="color"><br> Age: <input type="text" id='age'><br>
+    <br><button>Create</button>
     <br>
     <br> <br> <br> <br> <br> <br>
 
